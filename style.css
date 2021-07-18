@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form{
+    background-color: #fff;
+    width: 580px;
+    height: 440px;
+    padding: 40px;
+    margin: 50px auto;
+    font-family: "Arial", sans-serif;
+}
+
+.form h2{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.checkbox-control{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.checkbox__text{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.checkbox{
+    display: none;
+}
+
+.checkbox:checked + .tennis{
+    background-image: url(./icons/table-tennis.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+.checkbox:checked + .basketbol{
+    background-image: url(./icons/basketball-ball.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+.checkbox:checked + .volleybol{
+    background-image: url(./icons/volleyball-ball.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+.checkbox:checked + .xokkey{
+    background-image: url(./icons/hockey-puck.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    opacity: .4;
+}
+.form .label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox:disabled + .checkbox-control{
+    border: 2px solid #999;
+}
+
+.checkbox:disabled ~ .checkbox__text{
+    opacity: .4;
+}
+
